@@ -22,6 +22,6 @@ public class Animal {
         nombre=valor2;
     }
     public Animal(){
-        
+        nombre="Leon";
     }
 }
