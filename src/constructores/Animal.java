@@ -14,8 +14,14 @@ public class Animal {
     String especie;
     boolean carnivoro;
     
-    public Animal(String valor){
-        nombre=valor;
+    public Animal(String nombre){
+        this.nombre=nombre;
+    }
+    public Animal(boolean algo){
+        carnivoro=algo;
+    }
+    public Animal(boolean algo,String nombre){
+        carnivoro=algo;
     }
     public Animal(String valor1, String valor2){
         especie=valor1;
