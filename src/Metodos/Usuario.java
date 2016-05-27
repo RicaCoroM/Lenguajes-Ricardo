@@ -6,13 +6,24 @@
 package Metodos;
 
 public class Usuario {
-    int edad;
+    private int edad;
 
-    public Usuario(int edad) {
+    /**
+     * @return the edad
+     */
+    public int getEdad() {
+        return edad;
+    }
+
+    /**
+     * @param edad the edad to set
+     */
+    public void setEdad(int edad) {
+        if(edad<0){ 
+            edad=0; 
+            System.out.println("No debes meter edades menores de cero");
+        }
         this.edad = edad;
     }
 
-    public Usuario() {
-    }
-    
 }
