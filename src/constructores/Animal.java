@@ -13,7 +13,12 @@ public class Animal {
     String nombre;
     String especie;
     boolean carnivoro;
-
+/*
+    Todos las clases tienen:
+    -Atributos
+    -Constructores
+    -Metodos
+*/
     public Animal(String nombre, String especie) {
         this.nombre = nombre;
         this.especie = especie;
