@@ -26,6 +26,11 @@ public class Arreglos2 {
         for(int i=0;i<arreglo1.length;i++){
             System.out.println(arreglo1[i]);
         }
+        // Iteraremos el mismo arreglo pero con in ciclo for mejorado
+        //enhanced for
+        for(int x:arreglo1){
+            System.out.println(x);
+        }
             
     }
     
