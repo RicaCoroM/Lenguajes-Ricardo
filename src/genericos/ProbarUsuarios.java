@@ -5,6 +5,7 @@
  */
 package genericos;
 
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -14,15 +15,18 @@ import java.util.logging.Logger;
  */
 public class ProbarUsuarios {
     public static void main(String[] args) {
-        //paso 1 crear el usuario
-        Usuarios u=new Usuarios("Juan", 20, "juan@gmail.com");
-        //paso 2 guardar usuario
+        //vamos a leer el arraylist a ver que hay
+        //paso 1 creamos un objeto de la clase PersistenciaUsuario
         PersistenciaUsusario p=new PersistenciaUsusario();
-        try {
-            p.guardar(u);
-            System.out.println("Usuario guardado1");
-        } catch (Exception ex) {
+        try{
+            ArrayList<Usuarios> usuarios= p.buscarTodos();
+           int tam= usuarios.size();
+            System.out.println("usuarios guardados: "+tam);
+            System.out.println(usuarios.get(0).getNombre());
+                
+        }catch(Exception ex){
             System.out.println(ex.getMessage());
         }
-    }    
+        
+    }
 }

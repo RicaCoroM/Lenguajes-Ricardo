@@ -23,6 +23,7 @@ public class PersistenciaUsusario {
     public void guardar(Usuarios u)throws Exception{
         //Paso 1 Generar el archivo a guardarse
         File f=new File("archivaldo.raton");
+        if(f.exists()) usuarios= buscarTodos();
         //Indicar que se va a guardar
         FileOutputStream fos=new FileOutputStream(f);        
         
