@@ -10,7 +10,7 @@ package examen;
  * @author T-107
  */
 public class Libro {
-    private String titulo;
+    public String titulo;
     
     public void setTitulo(String titulo) {
         this.titulo = titulo;
