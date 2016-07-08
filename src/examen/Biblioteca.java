@@ -12,9 +12,9 @@ package examen;
 public class Biblioteca {
     public static void main(String[] args) {
         Estudiante e=new Estudiante();
-            e.setNombre("Juan");
+           // e.setNombre("Juan");
         Profesor p=new Profesor();
-            p.setNombre("Ana");
+            //p.setNombre("Ana");
         Libro lpa1=new Libro();
             lpa1.setTitulo("Doctrina del shock");
         Libro lpa2=new Libro();
@@ -25,8 +25,8 @@ public class Biblioteca {
         Prestamos ppa =new Prestamos();
         Prestamos ppp =new Prestamos();
                 
-        ppa.setPrestamos(e,2);
-        ppp.setPrestamos(p,1);
+       // ppa.setPrestamos(e,2);
+        //ppp.setPrestamos(p,1);
 
         
         

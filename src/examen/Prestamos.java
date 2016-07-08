@@ -11,11 +11,11 @@ package examen;
  */
 public class Prestamos {
     public void prestarLibros(Usuario u, int numero)throws LimiteLibrosException{
-        if(u.instanceOf(Profesor.class)&&numero>=3){
+       /* if(u.instanceOf(Profesor.class)&&numero>=3){
             throw new LimiteLibrosException();
         }
         if(u.instanceOf(Estudiante.class)&&numero>4){
             throw new LimiteLibrosException();
-        }
+        }*/
     }
 }
