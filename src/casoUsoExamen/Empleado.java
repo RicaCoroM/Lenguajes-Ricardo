@@ -11,9 +11,9 @@ package casoUsoExamen;
  */
 public class Empleado {
     
-    int empleado;
-    String nombre;
-    Departamento departamento;
+    private int empleado;
+    private String nombre;
+    private Departamento departamento;
 
     public Empleado() {
     }
@@ -23,6 +23,31 @@ public class Empleado {
         this.nombre = nombre;
         this.departamento = departamento;
     }
-    
-    
+
+    public Departamento getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(Departamento departamento) {
+        if(id==null)throw 
+        this.departamento = departamento;
+    }
+
+    public int getEmpleado() {
+        return empleado;
+    }
+
+    public void setEmpleado(int empleado) {
+        if(empleado==null)throw EmpleadoIdNullException();
+        this.empleado = empleado;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+        
 }

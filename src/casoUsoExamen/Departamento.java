@@ -11,14 +11,32 @@ package casoUsoExamen;
  */
 public class Departamento {
     
-    int departamento;
-    String nombre;
+    private int id;
+    private String nombre;
 
     public Departamento() {
     }
 
-    public Departamento(int departamento, String nombre) {
-        this.departamento = departamento;
+    public Departamento(int id, String nombre)throws DepartamentoIdMenorCeroException{
+        if(id<0)throw  new DepartamentoIdMenorCeroException();
+        this.id = id;
+        this.nombre = nombre;
+    }
+ 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) throws DepartamentoIdMenorCeroException{
+         if(id<0)throw  new DepartamentoIdMenorCeroException();
+        this.id = id;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
     
