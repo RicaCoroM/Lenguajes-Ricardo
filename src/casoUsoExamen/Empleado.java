@@ -11,14 +11,14 @@ package casoUsoExamen;
  */
 public class Empleado {
     
-    private int empleado;
+    private Integer empleado;
     private String nombre;
     private Departamento departamento;
 
     public Empleado() {
     }
 
-    public Empleado(int empleado, String nombre, Departamento departamento) {
+    public Empleado(Integer empleado, String nombre, Departamento departamento) {
         this.empleado = empleado;
         this.nombre = nombre;
         this.departamento = departamento;
@@ -29,7 +29,7 @@ public class Empleado {
     }
 
     public void setDepartamento(Departamento departamento) {
-        if(id==null)throw 
+        
         this.departamento = departamento;
     }
 
@@ -37,8 +37,8 @@ public class Empleado {
         return empleado;
     }
 
-    public void setEmpleado(int empleado) {
-        if(empleado==null)throw EmpleadoIdNullException();
+    public void setEmpleado(Integer empleado)throws EmpleadoIdNullException{
+        if(empleado==null)throw new EmpleadoIdNullException();
         this.empleado = empleado;
     }
 
